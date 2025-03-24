@@ -39,15 +39,15 @@ npm start
 
 ### Users
 
-| Method | Endpoint      | Description       | Request Body           |
-| ------ | ------------- | ----------------- | ---------------------- |
-| POST   | /api/user/add | Create a new user | `{ name, email, age }` |
-| GET    | /api/user/:id | Get user by ID    | -                      |
+| Method | Endpoint       | Description       | Request Body           |
+| ------ | -------------- | ----------------- | ---------------------- |
+| POST   | /api/users/add | Create a new user | `{ name, email, age }` |
+| GET    | /api/users/:id | Get user by ID    | -                      |
 
 #### Request Body Examples:
 
 ```json
-// POST /api/user/add
+// POST /api/users/add
 {
 	"name": "John Doe",
 	"email": "john@example.com",

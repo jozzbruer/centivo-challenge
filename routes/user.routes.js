@@ -5,7 +5,7 @@ import { addUser, getUsersById } from '../controllers/user.controller.js';
 const userRoutes = express.Router();
 
 userRoutes.post(
-	'/user/add',
+	'/users/add',
 	[
 		validation.check('name').isLength({ min: 3 }),
 		validation.check('email').isEmail(),
@@ -14,6 +14,6 @@ userRoutes.post(
 	addUser
 );
 
-userRoutes.get('/user/:userId', getUsersById);
+userRoutes.get('/users/:userId', getUsersById);
 
 export default userRoutes;
